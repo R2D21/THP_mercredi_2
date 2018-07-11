@@ -1,0 +1,11 @@
+# coding: utf-8
+require 'twitter'
+
+# quelques lignes qui enregistrent les clés d'APIs
+client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = ENV["fP1zf3BB3lEyjLgEndNU4kcQa"]
+  config.consumer_secret     = ENV["d8pJNIA5RGg30YHfGuAS80TSfXIucISrIZ8gvHksbvInOYphd6"]
+  config.access_token        = ENV["1016948246290354176-5P22zV88HL3zfcTcMWnTGt8UrUBPy2"]
+  config.access_token_secret = ENV["VQ75x8emAdZpJnk4FrVfH2p75wZZG2MrTG2WS4ZiHGpd6"]
+end
+p client
